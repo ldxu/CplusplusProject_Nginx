@@ -1,0 +1,3 @@
+/home/ubuntu/XLD/nginx/CplusplusProject_Nginx/client/build/CMakeFiles/CliForNginx.dir
+/home/ubuntu/XLD/nginx/CplusplusProject_Nginx/client/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/XLD/nginx/CplusplusProject_Nginx/client/build/CMakeFiles/rebuild_cache.dir
