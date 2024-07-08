@@ -1,2 +1,4 @@
-./app/link_obj/
-./app/dep/
+app/link_obj/
+app/dep/
+error.log
+nginx

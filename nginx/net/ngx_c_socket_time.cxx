@@ -168,7 +168,7 @@ void* CSocekt::ServerTimerQueueMonitorThread(void* threadData)
                 //时间到了，可以处理了
                 std::list<LPSTRUC_MSG_HEADER> m_lsIdleList; //保存要处理的内容
                 LPSTRUC_MSG_HEADER result;
-
+				ngx_log_stderr(0,"准备踢出超时节点");
                 err = pthread_mutex_lock(&pSocketObj->m_timequeueMutex);  
                 if(err != 0) ngx_log_stderr(err,"CSocekt::ServerTimerQueueMonitorThread()中pthread_mutex_lock()失败，返回的错误码为%d!",err);//有问题，要及时报告
                 while ((result = pSocketObj->GetOverTimeTimer(cur_time)) != NULL) //一次性的把所有超时节点都拿过来

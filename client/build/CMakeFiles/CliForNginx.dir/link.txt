@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/CliForNginx.dir/_src/cli.cpp.o CMakeFiles/CliForNginx.dir/_src/client.cpp.o CMakeFiles/CliForNginx.dir/_src/cli_config.cpp.o CMakeFiles/CliForNginx.dir/_src/log.cpp.o CMakeFiles/CliForNginx.dir/_src/crc32.cpp.o -o CliForNginx  -Wl,-rpath,/usr/local/lib /usr/local/lib/libconfig++.so /usr/local/lib/libspdlog.a -lpthread 

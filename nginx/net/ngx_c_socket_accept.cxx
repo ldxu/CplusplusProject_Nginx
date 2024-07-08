@@ -31,7 +31,6 @@ void CSocekt::ngx_event_accept(lpngx_connection_t oldc)
     lpngx_connection_t newc;              //代表连接池中的一个连接【注意这是指针】
     
     //ngx_log_stderr(0,"这是几个\n"); 这里会惊群，也就是说，epoll技术本身有惊群的问题
-
     socklen = sizeof(mysockaddr);
     do   //用do，跳到while后边去方便
     {     
@@ -109,7 +108,6 @@ void CSocekt::ngx_event_accept(lpngx_connection_t oldc)
                 return ;   
             }
         }
-
         //ngx_log_stderr(errno,"accept4成功s=%d",s); //s这里就是 一个句柄了
         newc = ngx_get_connection(s); //这是针对新连入用户的连接，和监听套接字 所对应的连接是两个不同的东西，不要搞混
         if(newc == NULL)

@@ -50,4 +50,3 @@ target_link_libraries(CliForNginx
     ${LIBCONFIGPP_LIBRARY}
     spdlog::spdlog
 )
-# 打印库路径和状态信息

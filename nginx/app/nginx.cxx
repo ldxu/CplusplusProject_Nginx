@@ -44,7 +44,6 @@ sig_atomic_t  ngx_reap;         //标记子进程状态变化[一般是子进程
 //程序主入口函数----------------------------------
 int main(int argc, char *const *argv)
 {     
-
     int exitcode = 0;           //退出代码，先给0表示正常退出
     int i;                      //临时用
     
@@ -66,7 +65,6 @@ int main(int argc, char *const *argv)
 
     g_os_argc = argc;           //保存参数个数
     g_os_argv = (char **) argv; //保存参数指针
-
     //全局量有必要初始化的
     ngx_log.fd = -1;                  //-1：表示日志文件尚未打开；因为后边ngx_log_stderr要用所以这里先给-1
     ngx_process = NGX_PROCESS_MASTER; //先标记本进程是master进程
